@@ -38,9 +38,15 @@ li:first-of-type {
 }
 /* first-of-type type selector helps us to choose the first item on the li element. */
 
-
 li:nth-of-type(3) {
   background-color: yellow;
+  grid-column: 1 / 3;
+  /* this is how we define the length that occupies by the grid element. This code 
+  means that the grid element should start at column 1 and end at column 2. */
+
+  /* grid-column: 1 / span 2; */
+  /* This is another way to define the grid column property. Span tells how many 
+  columns does this element occupies. */
 }
-/* nth-of-type type selector helps us to choose a specific item on the li element. That specific item is
-defined by the number on this type selector. */
+/* nth-of-type type selector helps us to choose a specific item on the li element. 
+That specific item is defined by the number on this type selector. */
