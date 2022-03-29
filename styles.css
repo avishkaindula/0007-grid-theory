@@ -11,6 +11,16 @@ ul {
   width: 800px;
   margin: 10px auto;
   padding: 10px;
+  display: grid;
+  /* We should add the display: grid; property to the "parent" which contains the
+  items we want to align. */
+
+  /* grid-template-columns: 400px 400px; */
+  /* creating two columns with the width of 400px. But we don't actually use pixels to
+  define the sizes of columns. Instead we use something called "fractions". Fractions
+  divide the available width of the parent element (800px) into equal parts and assign
+  them to the grid elements. */
+  grid-template-columns: 1fr 1fr;
 }
 
 li {
