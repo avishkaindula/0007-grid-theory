@@ -21,6 +21,9 @@ ul {
   divide the available width of the parent element (800px) into equal parts and assign
   them to the grid elements. */
   grid-template-columns: 1fr 1fr;
+
+  gap: 100px 200px;
+  /* defines the gap between grid elements. */
 }
 
 li {
